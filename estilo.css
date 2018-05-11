@@ -17,24 +17,34 @@ h3{
 	font-weight: 500;
 	text-transform: uppercase;
 }
+a:hover {
+	text-decoration: none;
+}
+p {
+	color: #948f81;
+	font-family: Spiegel;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 18px;
+}
 
-/*Primeiro conteúdo*/
+/*=========Spotlight============*/
 
-.pt1 {
-	width: 100%;
-	position: relative;
-	max-height: 95vh;
+section#spotlight {
+	max-height: 139vh;
 	min-height: 450px;
-
-}
-
-.pt1 #hero-video {
-	position: fixed;
-	display: block;
+	position: relative;
 	width: 100%;
-}
 
-.pt1 .siteBr {
+}
+section#spotlight video {
+	display: block;
+	min-height: 482px;
+	min-width: 100%;	
+	position: absolute;
+}
+section#spotlight .siteBr {
+	float: right;
 	position: absolute;
 	right: 2%;
 	top: 2%;
@@ -44,32 +54,29 @@ h3{
 	font-size: 16px;
 }
 
-.pt1 .img-logo {
+section#spotlight .siteBr:hover {
+	text-decoration: underline;
+}
+
+section#spotlight .logo h1.img-logo {
 	background: url(imagens/logo3.png) no-repeat;
 	background-size: contain;
 	color: transparent;
 	display: block;
-	margin: 45px auto 80px;
 	height: 163px;
+	margin: 45px auto 80px;
+	text-decoration: none;
 	width: 441px;
+}
+section#spotlight .entre-liga {
+	margin-top: 80px;
 
 }
-
-.pt1 span.siteBr {
-	float: right;
-}
-.pt1 h2 {
-	margin-bottom: .3em;
-	text-shadow: 2px 2px 6px rgba(0,0,0,.4);
-}
-.pt1 .entre-liga {
-	margin-top: 75px;
-}
-.pt1 h2, .pt1 h3 {
+section#spotlight .entre-liga h2, section#spotlight .entre-liga h3 {
 	text-align: center;
 }
 
-.pt1 button {
+section#spotlight .entre-liga button {
 	background: #1e2328;
 	border: 3px solid rgba(192,252,253,.7);
 	border-image: linear-gradient(to bottom,#08abac 0,#01698b 100%);
@@ -78,8 +85,72 @@ h3{
 	display: block;
 	font-family: "Beaufort for LOL";
 	font-size: 18px;
-	margin: 0 auto;
-	text-transform: uppercase;
+	margin: 15px auto 30px;
 	padding: 13px 35px 12px;
+	text-transform: uppercase;
+	transition: all ease .5s;
+	
 
 }
+
+section#spotlight .entre-liga button:hover {
+	background-image: url(imagens/btn-hover.jpg);
+	background-position: center center;
+	background-size: cover;
+	box-shadow: 0 0 10px 4px rgba(192,252,253,.4),inset 0 0 5px 2px rgba(192,252,253,.3);
+	border: 3px solid rgba(192,252,253,.7);
+}
+
+/*=========Conteúdo 2============*/
+section.conteudo-2 {
+	background: url(imagens/jogue-melhor.jpg) no-repeat;
+	background-size: cover;
+	background-position: center top;	
+	position: relative;
+
+}
+section.borda {
+	border-top: 8px solid transparent; 	
+	border-image: linear-gradient(to right,#836323 0,#c3a568 51%,#836323 100%);
+	border-image-slice: 1;
+	box-shadow: 0 4px 15px -2px #000 inset;
+} 
+
+section.conteudo-2 .cont {
+	padding: 80px 0 100px;
+}
+
+section.conteudo-2 .imagem-play {
+	margin-top: 50px;
+}
+
+section.conteudo-2 .imagem-play img {
+	border: 2px solid #836323;
+	height: 100px;	
+	width: 150px;
+}
+
+section.conteudo-2 .imagem-play a .glyphicon{
+	color: white;
+	display: block;
+	font-size: 50px;
+	text-align: center;
+	margin: 75px 50px 25px 50px;
+	position: absolute;
+
+}
+
+section.conteudo-2 .imagem-play a span.texto {
+	color: #09abae;
+	font-size: 18px;
+	font-family: "Beaufort for LOL";
+	font-weight: 500;
+	margin-left: 25px;
+}
+section.conteudo-2 .imagem-play a .glyphicon:hover {
+	color: #09abae;
+}
+section.conteudo-2 .imagem-play img:hover {
+	border: 2px solid #09abae;
+}
+
